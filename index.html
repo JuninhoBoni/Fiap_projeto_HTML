@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Fintech</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,900;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/Finstyles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-container">
+            <div class="form-container">
+                <div class="logo-container">
+                    <img src="/images/FINTECH (5).png" alt="Logo Fintech" class="logo">
+                </div>
+                <h2 class="login-title">Bem-vindo ao Fintech</h2>
+                <form class="login-form" onsubmit="return handleLogin(event)">
+                    <div class="input-group">
+                        <label for="email">E-mail</label>
+                        <input type="email" id="email" placeholder="email@exemplo.com" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" required>
+                    </div>
+                    <button type="submit" class="login-button">Entrar</button>
+                </form>
+                <div class="footer-links">
+                    <a href="#">Esqueceu a senha?</a>
+                    <a href="#">Criar uma conta</a>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="/images/fundo imagem (1080 x 1280 px).png" alt="Imagem Login" class="side-image">
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        function handleLogin(event) {
+            event.preventDefault(); 
+            window.location.href = "pages/dashboard.html"; }
+    </script>
+</body>
+</html>
